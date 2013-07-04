@@ -1,5 +1,6 @@
 package de.danoeh.antennapod.feed;
 
 public enum MediaType {
-	AUDIO, VIDEO, UNKNOWN
+    // TODO added TORRENT
+	AUDIO, VIDEO, UNKNOWN, TORRENT
 }

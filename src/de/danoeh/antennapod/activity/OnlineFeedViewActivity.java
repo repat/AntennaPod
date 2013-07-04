@@ -117,6 +117,7 @@ public abstract class OnlineFeedViewActivity extends SherlockFragmentActivity {
         feed.setFile_url(fileUrl);
         DownloadStatus status = new DownloadStatus(feed, "OnlineFeed");
 
+        // TODO seperate torrent from normal download
         if (feed.getDownload_url().contains("torrent")) {
             BitTorrentDownloader bitTorrentDownloader = new BitTorrentDownloader(downloaderCallback, status);
             bitTorrentDownloader.start();
